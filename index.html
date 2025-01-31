@@ -13,6 +13,8 @@
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/d3859f3d5b.js" crossorigin="anonymous"></script>
 <!-- Tailwind custom cdn -->
 <script>
     tailwind.config = {
@@ -22,6 +24,7 @@
             clifford: '#da373d',
             "custom-color-1":"rgba(23, 152, 0, 1)",
             "custom-color-2":"rgba(17, 17, 17, 1)",
+            "custom-color-3": "rgba(239, 235, 227, 1)",
           }
         }
       }
@@ -45,18 +48,18 @@
         <li><a href="">Product</a></li>
         <li><a href="">Services</a></li>
         <li><a href="">Contact Us</a></li>
-        <button class="btn btn-outline">Login</button>
-        <button class="btn bg-custom-color-1 text-white hover:bg-slate-950">Register</button>
       </ul>
       <div class="lg:block space-x-5">
-        <i class="bx bx-search-alt-2 text-2xl cursor-pointer"></i>
-        <i class="bx bx-cart text-2xl cursor-pointer"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <button class="btn btn-outline">Login</button>
+        <button class="btn bg-custom-color-1 text-white hover:bg-slate-950">Register</button>
       </div>
       <i class="bx bx-menu lg:hidden md:hidden text-6xl pl-2 lg:p-0 md:p-0"></i>
      </nav>
      <!-- navbar section end -->
       <!-- hero section start -->
-       <div class="bg-gradient-to-b from white to-custom-color-2 my-20 flex flex-col lg:gap-20 gap-5 justify-center items-center">
+       <div class="bg-gradient-to-b from-white to-custom-color-3 my-20 flex flex-col lg:gap-20 gap-5 justify-center items-center">
         <div class="text-center space-y-5">
           <h1 class="lg:text-5xl text-3xl font-semibold">Freshness <span class="text-custom-color-1">You Can <br>
             Count</span> On, Prices You’ll Love!</h1>
@@ -68,6 +71,45 @@
        </div>
   </header>
   <!-- header section end -->
-    
+   <!-- service section start -->
+    <div class="container mx-auto p-5 lg:p-0">
+      <h3 class="text-custom-color-1 text-4xl font-semibold">Services</h3>
+      <div class="grid gird-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 my-10">
+        <div class="flex flex-col items-center justify-center gap-2 h-[300px] text-center bg-custom-color-3 hover:bg-gray-100 rounded-lg">
+          <div class="avatar">
+            <div class="bg-white w-24 rounded-full">
+              <img src="./assets/service.png" alt="">
+            </div>
+          </div>
+          <div class="lg:w-[260px] space-y-2">
+            <h2 class="lg:text-2xl font-semibold">24/7 Services </h2>
+            <p class="text-sm">Shop from our popular category, Explore special offers and receive grocery on your doorsteps within 1 hour.</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2 h-[300px] text-center bg-custom-color-3 hover:bg-gray-100 rounded-lg">
+          <div class="avatar">
+            <div class="bg-white w-24 rounded-full">
+              <img src="./assets/delivery.png" alt="">
+            </div>
+          </div>
+          <div class="lg:w-[260px] space-y-2">
+            <h2 class="lg:text-2xl font-semibold">24/7 Services </h2>
+            <p class="text-sm">Shop from our popular category, Explore special offers and receive grocery on your doorsteps within 1 hour.</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2 h-[300px] text-center bg-custom-color-3 hover:bg-gray-100 rounded-lg">
+          <div class="avatar">
+            <div class="bg-white w-24 rounded-full">
+              <img src="./assets/healthy.png" alt="">
+            </div>
+          </div>
+          <div class="lg:w-[260px] space-y-2">
+            <h2 class="lg:text-2xl font-semibold">24/7 Services </h2>
+            <p class="text-sm">Shop from our popular category, Explore special offers and receive grocery on your doorsteps within 1 hour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service section end -->
 </body>
 </html>
