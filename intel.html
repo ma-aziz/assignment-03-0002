@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
-    <link rel="shortcut icon" href="favicon.ico" type="./assets/cart.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/cart.png" type="">
     <!-- Sora Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            "custom-color-1":"rgba(23, 152, 0, 1)",
           }
         }
       }
@@ -32,6 +34,28 @@
     </style>
 </head>
 <body class="font-sora">
+  <header>
+    <!-- navbar section start -->
+     <nav class="lg:mx-10 h-24 flex justify-between items-center border-b-2 border-custom-accent md:border-none lg:border-none">
+      <div>
+        <img class="w-[75%] pl-2 lg:p-0 md:p-0 cursor-pointer" src="./assets/logo-header.png" alt="">
+      </div>
+      <ul class="lg:flex justify-center items-center gap-10">
+        <li><a href="">Product</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact Us</a></li>
+        <button class="btn btn-outline">Login</button>
+        <button class="btn bg-custom-color-1 text-white hover:bg-slate-950">Register</button>
+      </ul>
+      <div class="lg:block space-x-5">
+        <i class="bx bx-search-alt-2 text-2xl cursor-pointer"></i>
+        <i class="bx bx-cart text-2xl cursor-pointer"></i>
+      </div>
+      <i class="bx bx-menu lg:hidden md:hidden text-6xl pl-2 lg:p-0 md:p-0"></i>
+     </nav>
+     <!-- navbar section end -->
+      <!-- hero section start -->
+  </header>
     
 </body>
 </html>
